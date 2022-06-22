@@ -2,11 +2,11 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_lisa.git -b script-miui"
+export DT_LINK="https://github.com/OrangeFoxRecovery/device_xiaomi_laurel_sprout.git"
 
-export DEVICE="lisa"
+export DEVICE="laurel_sprout"
 export OEM="xiaomi"
-export TARGET="adbd bootimage"
+export TARGET="bootimage"
 
 export OUTPUT="output.zip"
 
