@@ -22,7 +22,7 @@ if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
     cd $SYNC_PATH/system 
 	 rm -rf vold 
 	  git clone https://github.com/Pranav-Talmale/twrp_android_system_vold.git vold
-	cd $SYNC_PATH/vendor
+    cd $SYNC_PATH/vendor
 	 rm -rf twrp
 	  git clone https://github.com/Pranav-Talmale/android_vendor_twrp.git twrp
     cd $SYNC_PATH/bootable
