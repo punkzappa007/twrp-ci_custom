@@ -2,7 +2,7 @@
 
 # Device
 export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-twrp.git -b twrp-12.1"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-twrp.git -b normal-fstab"
 
 export DEVICE="raphael"
 export OEM="xiaomi"
