@@ -19,15 +19,19 @@ repo sync
 #Clone required patches for twrp-12.1
 if [ "$TWRP_BRANCH" = "twrp-12.1" ]; then
     echo "Cloning custom repos for twrp to build..."
-    cd $SYNC_PATH/system 
-	 rm -rf vold 
-	  git clone https://github.com/Pranav-Talmale/twrp_android_system_vold.git vold
-    cd $SYNC_PATH/vendor
-	 rm -rf twrp
-	  git clone https://github.com/Pranav-Talmale/android_vendor_twrp.git twrp
     cd $SYNC_PATH/bootable
 	 rm -rf recovery
-	  git clone https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git recovery
+	  git clone https://github.com/Pranav-Talmale/twrp_android_bootable_recovery.git -b test recovery
+
+    cd $SYNC_PATH/system/vold
+    echo "Cloning LibVold Patch...."	
+	git fetch https://gerrit.twrp.me/android_system_vold refs/changes/40/5540/7 && git cherry-pick FETCH_HEAD # libvold patch
+    cd $SYNC_PATH/bootable/recovery
+	echo "Cloning FScrypt patch..."
+	git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/05/5405/25 && git cherry-pick FETCH_HEAD # fscrypt patch
+	cd $SYNC_PATH/system/core
+	echo "Cloning other miscellaneous patches..."
+	git fetch https://gerrit.twrp.me/android_system_core refs/changes/75/5675/6 && git cherry-pick FETCH_HEAD # first_stage_init # skkk #sm8350 	  
 fi
 
 # Change to the Source Directory
