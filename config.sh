@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="TWRP-CG8"
-export DT_LINK="https://github.com/punkzappa007/android_device_tecno_TECNO-CG8.git"
+export TWRP_BRANCH="twrp-12.1"
+export DT_LINK="https://github.com/punkzappa007/android_device_tecno_TECNO-CG8.git -b TWRP-CG8"
 
 export DEVICE="CG8"
 export OEM="TECNO"
