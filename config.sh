@@ -1,22 +1,14 @@
 #!/bin/bash
 
 # Device
-export TWRP_BRANCH="twrp-12.1"
-export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_raphael-twrp.git -b EvolutionX"
+export TWRP_BRANCH="TWRP-CG8"
+export DT_LINK="https://github.com/punkzappa007/android_device_tecno_TECNO-CG8.git"
 
-export DEVICE="raphael"
-export OEM="xiaomi"
-export TARGET="recoveryimage"
+export DEVICE="CG8"
+export OEM="TECNO"
+export TARGET="bootimage"
 
 export OUTPUT="output.zip"
-
-# Kernel Source
-# Uncomment the next line if you want to clone a kernel source.
-#export KERNEL_SOURCE="https://github.com/Pranav-Talmale/android_kernel_xiaomi_lisa.git"
-#export PLATFORM="sm6150" # Leave it commented if you want to clone the kernel to kernel/$OEM/$DEVICE
-
-# Extra Command
-#export EXTRA_CMD="y u bulli me"
 
 # Clang
 # Cloned in ~/work/prebuilts/clang/host/linux-x86/$CUSTOM_CLANG_FOLDER
