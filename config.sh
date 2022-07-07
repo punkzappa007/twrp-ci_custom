@@ -11,7 +11,7 @@ export TARGET="bootimage"
 export OUTPUT="output.zip"
 
 # Clang
-# Cloned in ~/work/prebuilts/clang/host/linux-x86/$CUSTOM_CLANG_FOLDER
+# Cloned in ~/work/prebuilts/clang/host/linux-x86/$CUSTOM_CLANG_FOLDER 
 # Custom Clang is needed if you face issues while building with a kernel source. Make sure to add appropriate flags in your BoardConfig.mk to use custom clang.
 # Can't clone both clangs. Uncomment the clang that you don't need.
 #OF_USE_NEUTRON_CLANG=true
